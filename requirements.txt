@@ -1,8 +1,11 @@
 --index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
+annotated-types==0.5.0 ; python_version >= "3.9" and python_version < "4.0"
 greenlet==2.0.2 ; python_version >= "3.9" and python_version < "4.0" and (platform_machine == "win32" or platform_machine == "WIN32" or platform_machine == "AMD64" or platform_machine == "amd64" or platform_machine == "x86_64" or platform_machine == "ppc64le" or platform_machine == "aarch64")
 mypy-extensions==1.0.0 ; python_version >= "3.9" and python_version < "4.0"
 mypy==1.4.1 ; python_version >= "3.9" and python_version < "4.0"
+pydantic-core==2.1.2 ; python_version >= "3.9" and python_version < "4.0"
+pydantic==2.0.2 ; python_version >= "3.9" and python_version < "4.0"
 sqlalchemy[mypy]==2.0.18 ; python_version >= "3.9" and python_version < "4.0"
 tomli==2.0.1 ; python_version >= "3.9" and python_version < "3.11"
 typing-extensions==4.7.1 ; python_version >= "3.9" and python_version < "4.0"
