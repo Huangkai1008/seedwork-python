@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "seedwork-python"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python seedwork library."
 license = "MIT"
 authors = ["Huang Kai <h1770360848@outlook.com>"]
@@ -17,6 +17,7 @@ classifiers = [
 ]
 packages = [
     { include = "seedwork" },
+    { include = "seedwork/py.typed"},
 ]
 
 
