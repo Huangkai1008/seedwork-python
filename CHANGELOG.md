@@ -2,6 +2,12 @@
 ## [Unreleased]
 
 
+<a name="v0.1.1"></a>
+## [v0.1.1] - 2021-07-16
+### Bug Fixes
+- make package comply with PEP-561
+
+
 <a name="v0.1.0"></a>
 ## v0.1.0 - 2021-07-15
 ### Bug Fixes
@@ -13,4 +19,5 @@
 - init commit
 
 
-[Unreleased]: https://github.com/Huangkai1008/seedwork-python/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/Huangkai1008/seedwork-python/compare/v0.1.1...HEAD
+[v0.1.1]: https://github.com/Huangkai1008/seedwork-python/compare/v0.1.0...v0.1.1
