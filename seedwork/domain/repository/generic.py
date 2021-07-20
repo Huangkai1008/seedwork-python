@@ -23,9 +23,7 @@ class GenericRepository(Generic[T], metaclass=ABCMeta):
         """Create an entity."""
 
     @abstractmethod
-    def update(
-        self, entity_id: EntityId, entity: T, commit: bool = True
-    ) -> Optional[T]:
+    def update(self, entity_id: EntityId, entity: T) -> Optional[T]:
         """Update and return an entity based on the given primary key identifier.
 
         Returns:
@@ -35,13 +33,16 @@ class GenericRepository(Generic[T], metaclass=ABCMeta):
 
     @abstractmethod
     def delete(self, entity_id: EntityId) -> None:
-        """Delete an entity."""
+        """Delete an entity.
+
+        If the entity doesn't exist, do nothing.
+
+        """
 
     @abstractmethod
     def commit(self) -> None:
         """Commit the current transaction.
 
         If the implementation isn't transactional, this method does nothing.
-
 
         """
