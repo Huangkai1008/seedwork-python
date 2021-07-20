@@ -2,6 +2,13 @@
 ## [Unreleased]
 
 
+<a name="v0.2.0"></a>
+## [v0.2.0] - 2021-07-20
+### Features
+- **domain:** generic repository interface
+- **infrastructure:** sqlalchemy generic repository implementation
+
+
 <a name="v0.1.1"></a>
 ## [v0.1.1] - 2021-07-16
 ### Bug Fixes
@@ -19,5 +26,6 @@
 - init commit
 
 
-[Unreleased]: https://github.com/Huangkai1008/seedwork-python/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/Huangkai1008/seedwork-python/compare/v0.2.0...HEAD
+[v0.2.0]: https://github.com/Huangkai1008/seedwork-python/compare/v0.1.1...v0.2.0
 [v0.1.1]: https://github.com/Huangkai1008/seedwork-python/compare/v0.1.0...v0.1.1
