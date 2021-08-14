@@ -8,3 +8,5 @@ export-requirements:
 	poetry export -f requirements.txt > requirements.txt --without-hashes
 export-dev-requirements:
 	poetry export -f requirements.txt > requirements-dev.txt --without-hashes --with dev
+lint:
+	poetry run mypy . && poetry run black . --check && poetry run isort . --check-only && poetry run flake8 .
