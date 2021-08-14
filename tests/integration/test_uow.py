@@ -1,5 +1,4 @@
 import pytest
-
 from sqlalchemy import Table, insert, select
 from sqlalchemy.orm import sessionmaker
 
@@ -11,6 +10,7 @@ class TestSQLAlchemyUnitOfWork:
         self, session_factory: sessionmaker, table: Table
     ) -> None:
         uow = SQLAlchemyUnitOfWork(session_factory)
+
         with uow:
             stmt = insert(table).values(name='name', description='description')
             uow.session.execute(stmt)
@@ -24,6 +24,7 @@ class TestSQLAlchemyUnitOfWork:
         self, session_factory: sessionmaker, table: Table
     ) -> None:
         uow = SQLAlchemyUnitOfWork(session_factory)
+
         with uow:
             stmt = insert(table).values(name='name', description='description')
             uow.session.execute(stmt)
@@ -35,8 +36,8 @@ class TestSQLAlchemyUnitOfWork:
     def test_uow_rollbacks_on_error(
         self, session_factory: sessionmaker, table: Table
     ) -> None:
-
         uow = SQLAlchemyUnitOfWork(session_factory)
+
         with pytest.raises(Exception):
             with uow:
                 stmt = insert(table).values(name='name', description='description')
